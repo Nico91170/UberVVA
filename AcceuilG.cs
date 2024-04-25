@@ -25,5 +25,12 @@ namespace UberVVA
         {
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Fromgm FM = new Fromgm();
+            FM.Show();
+            this.Hide();
+        }
     }
 }
