@@ -13,9 +13,9 @@ using System.Xml.Linq;
 
 namespace UberVVA
 {
-    public partial class Fromgm : Form
+    public partial class FromajtMenu : Form
     {
-        public Fromgm()
+        public FromajtMenu()
         {
             InitializeComponent();
         }
@@ -38,8 +38,16 @@ namespace UberVVA
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+        }
+
         private void BTvalidergm_Click(object sender, EventArgs e)
         {
+
             string connectionString = "server=localhost; database=foodmaps; user id=root; pwd=";
             using (MySqlConnection connexion = new MySqlConnection(connectionString))
             {
@@ -63,18 +71,6 @@ namespace UberVVA
                     }
                 }
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-        }
-
-        private void BTvalidergm_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

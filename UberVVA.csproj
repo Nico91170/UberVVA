@@ -70,11 +70,11 @@
       <DependentUpon>CreationCompte.cs</DependentUpon>
     </Compile>
     <Compile Include="FileName.cs" />
-    <Compile Include="Fromgm.cs">
+    <Compile Include="FormajtMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fromgm.Designer.cs">
-      <DependentUpon>Fromgm.cs</DependentUpon>
+    <Compile Include="FormajtMenu.Designer.cs">
+      <DependentUpon>FormajtMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="SelectMenu.cs">
       <SubType>Form</SubType>
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="CreationCompte.resx">
       <DependentUpon>CreationCompte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fromgm.resx">
-      <DependentUpon>Fromgm.cs</DependentUpon>
+    <EmbeddedResource Include="FormajtMenu.resx">
+      <DependentUpon>FormajtMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectMenu.resx">
       <DependentUpon>SelectMenu.cs</DependentUpon>

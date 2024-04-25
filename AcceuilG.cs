@@ -28,7 +28,7 @@ namespace UberVVA
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Fromgm FM = new Fromgm();
+            FromajtMenu FM = new FromajtMenu();
             FM.Show();
             this.Hide();
         }

@@ -1,6 +1,6 @@
 ﻿namespace UberVVA
 {
-    partial class Fromgm
+    partial class FromajtMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -49,9 +49,9 @@
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitlegm.Location = new System.Drawing.Point(421, 9);
             this.labelTitlegm.Name = "labelTitlegm";
-            this.labelTitlegm.Size = new System.Drawing.Size(350, 31);
+            this.labelTitlegm.Size = new System.Drawing.Size(372, 31);
             this.labelTitlegm.TabIndex = 0;
-            this.labelTitlegm.Text = "Veuillez gérer les Menus !";
+            this.labelTitlegm.Text = "Veuillez ajouter les Menus !";
             // 
             // labelNameNourriture
             // 
@@ -113,6 +113,7 @@
             this.BTvalidergm.TabIndex = 12;
             this.BTvalidergm.Text = "Valider";
             this.BTvalidergm.UseVisualStyleBackColor = true;
+            this.BTvalidergm.Click += new System.EventHandler(this.BTvalidergm_Click);
             // 
             // linkLbackmenus
             // 
@@ -162,7 +163,7 @@
             this.button1.Text = "CLEAR";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Fromgm
+            // FromajtMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,8 +180,8 @@
             this.Controls.Add(this.labelTypeNourriture);
             this.Controls.Add(this.labelNameNourriture);
             this.Controls.Add(this.labelTitlegm);
-            this.Name = "Fromgm";
-            this.Text = "Gérer les Menus";
+            this.Name = "FromajtMenu";
+            this.Text = "Ajouter un Menu";
             this.Load += new System.EventHandler(this.Fromgm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
