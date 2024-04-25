@@ -33,13 +33,13 @@
             this.labelTypeNourriture = new System.Windows.Forms.Label();
             this.labelDescrNourriture = new System.Windows.Forms.Label();
             this.labelPhNourriture = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTuploadimg = new System.Windows.Forms.Button();
             this.BTvalidergm = new System.Windows.Forms.Button();
             this.linkLbackmenus = new System.Windows.Forms.LinkLabel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,14 +93,6 @@
             this.labelPhNourriture.Size = new System.Drawing.Size(158, 16);
             this.labelPhNourriture.TabIndex = 4;
             this.labelPhNourriture.Text = "Photo de la Nourriture";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(368, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
@@ -163,18 +155,26 @@
             this.linkLbackmenus.Text = "Retourner à la page des Menus";
             this.linkLbackmenus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLbackmenus_LinkClicked);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(368, 82);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(143, 24);
+            this.textBox1.TabIndex = 14;
+            // 
             // Fromgm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 571);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.linkLbackmenus);
             this.Controls.Add(this.BTvalidergm);
             this.Controls.Add(this.BTuploadimg);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelPhNourriture);
             this.Controls.Add(this.labelDescrNourriture);
             this.Controls.Add(this.labelTypeNourriture);
@@ -195,13 +195,13 @@
         private System.Windows.Forms.Label labelNameNourriture;
         private System.Windows.Forms.Label labelTypeNourriture;
         private System.Windows.Forms.Label labelDescrNourriture;
-        private System.Windows.Forms.Label labelPhNourriture;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelPhNourriture
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BTuploadimg;
         private System.Windows.Forms.Button BTvalidergm;
         private System.Windows.Forms.LinkLabel linkLbackmenus;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
