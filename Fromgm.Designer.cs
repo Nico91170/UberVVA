@@ -52,7 +52,6 @@
             this.labelTitlegm.Size = new System.Drawing.Size(350, 31);
             this.labelTitlegm.TabIndex = 0;
             this.labelTitlegm.Text = "Veuillez gérer les Menus !";
-            this.labelTitlegm.Click += new System.EventHandler(this.labelTitlegm_Click);
             // 
             // labelNameNourriture
             // 
@@ -114,7 +113,6 @@
             this.BTvalidergm.TabIndex = 12;
             this.BTvalidergm.Text = "Valider";
             this.BTvalidergm.UseVisualStyleBackColor = true;
-            this.BTvalidergm.Click += new System.EventHandler(this.BTvalidergm_Click);
             // 
             // linkLbackmenus
             // 
@@ -157,13 +155,12 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(513, 456);
+            this.button1.Location = new System.Drawing.Point(594, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 36);
             this.button1.TabIndex = 17;
             this.button1.Text = "CLEAR";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Fromgm
             // 
