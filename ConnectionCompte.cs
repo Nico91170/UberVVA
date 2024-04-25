@@ -25,32 +25,51 @@ namespace UberVVA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection connexion = new MySqlConnection("database = foodmaps; server=localhost; user id=root; pwd=");
-
+            MySqlConnection connexion = new MySqlConnection("server=localhost; database=foodmaps; user id=root; pwd=");
 
             try
             {
                 connexion.Open();
-                string Query = "select * FROM user WHERE username='" + txtuser.Text.Trim() + "'AND password='" + txtpwd.Text.Trim() + "'";
-                MySqlDataAdapter sda = new MySqlDataAdapter(Query, connexion);
+                string Query = "SELECT * FROM user WHERE username=@username AND password=@password";
+                MySqlCommand cmd = new MySqlCommand(Query, connexion);
+                cmd.Parameters.AddWithValue("@username", txtuser.Text.Trim());
+                cmd.Parameters.AddWithValue("@password", txtpwd.Text.Trim());
+
+                MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
+
                 if (dt.Rows.Count == 1)
                 {
-                    SelectionMenu dr = new SelectionMenu();
-                    dr.Show();
-                    this.Hide();
+                    string role = dt.Rows[0]["role"].ToString();
+
+                    if (role == "Administrateur")
+                    {
+                        AcceuilG AG = new AcceuilG();
+                        AG.Show();
+                        this.Hide();
+                    }
+                    if (role == "Vacancier")
+                    {
+                        SelectionMenu SM = new SelectionMenu();
+                        SM.Show();
+                        this.Hide();
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("Les identifiants sont faux");
+                    MessageBox.Show("Les identifiants sont incorrects.");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
+            finally
+            {
+                connexion.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
