@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\MySql.Data\v4.0_8.3.0.0__c5687fc88969c44d\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,11 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connexion.cs">
+    <Compile Include="ConnectionCompte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connexion.Designer.cs">
-      <DependentUpon>Connexion.cs</DependentUpon>
+    <Compile Include="ConnectionCompte.Designer.cs">
+      <DependentUpon>ConnectionCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreationCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreationCompte.Designer.cs">
+      <DependentUpon>CreationCompte.cs</DependentUpon>
     </Compile>
     <Compile Include="FileName.cs" />
     <Compile Include="SelectMenu.cs">
@@ -62,8 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Connexion.resx">
-      <DependentUpon>Connexion.cs</DependentUpon>
+    <EmbeddedResource Include="ConnectionCompte.resx">
+      <DependentUpon>ConnectionCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreationCompte.resx">
+      <DependentUpon>CreationCompte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectMenu.resx">
       <DependentUpon>SelectMenu.cs</DependentUpon>
