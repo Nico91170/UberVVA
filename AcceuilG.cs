@@ -32,5 +32,12 @@ namespace UberVVA
             FM.Show();
             this.Hide();
         }
+
+        private void BTgoSelectmenuA_Click(object sender, EventArgs e)
+        {
+            SelectionMenu SM = new SelectionMenu();
+            SM.Show();
+            this.Hide();
+        }
     }
 }
