@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionMenu));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.BTgogm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -41,20 +41,21 @@
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SandyBrown;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(129, 9);
+            this.label1.Location = new System.Drawing.Point(265, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(661, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "On vous souhaite un bon appétit d\'avance !";
             // 
-            // label2
+            // BTgogm
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(428, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.BTgogm.Location = new System.Drawing.Point(541, 526);
+            this.BTgogm.Name = "BTgogm";
+            this.BTgogm.Size = new System.Drawing.Size(119, 27);
+            this.BTgogm.TabIndex = 1;
+            this.BTgogm.Text = "Gestion des Menus";
+            this.BTgogm.UseVisualStyleBackColor = true;
+            this.BTgogm.Click += new System.EventHandler(this.BTgogm_Click);
             // 
             // SelectionMenu
             // 
@@ -62,8 +63,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(913, 461);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1178, 579);
+            this.Controls.Add(this.BTgogm);
             this.Controls.Add(this.label1);
             this.Name = "SelectionMenu";
             this.Text = "Selection des Menus";
@@ -75,6 +76,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BTgogm;
     }
 }

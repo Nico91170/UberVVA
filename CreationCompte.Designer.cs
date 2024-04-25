@@ -184,6 +184,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CreationCompte";
             this.Text = "CreationCompte";
+            this.Load += new System.EventHandler(this.CreationCompte_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

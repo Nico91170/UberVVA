@@ -75,5 +75,10 @@ namespace UberVVA
                 }
             }
         }
+
+        private void CreationCompte_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
