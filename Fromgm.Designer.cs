@@ -32,15 +32,14 @@
             this.labelNameNourriture = new System.Windows.Forms.Label();
             this.labelTypeNourriture = new System.Windows.Forms.Label();
             this.labelDescrNourriture = new System.Windows.Forms.Label();
-            this.labelPhNourriture = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BTuploadimg = new System.Windows.Forms.Button();
             this.BTvalidergm = new System.Windows.Forms.Button();
             this.linkLbackmenus = new System.Windows.Forms.LinkLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTitlegm
@@ -53,6 +52,7 @@
             this.labelTitlegm.Size = new System.Drawing.Size(350, 31);
             this.labelTitlegm.TabIndex = 0;
             this.labelTitlegm.Text = "Veuillez gérer les Menus !";
+            this.labelTitlegm.Click += new System.EventHandler(this.labelTitlegm_Click);
             // 
             // labelNameNourriture
             // 
@@ -68,7 +68,7 @@
             // 
             this.labelTypeNourriture.AutoSize = true;
             this.labelTypeNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeNourriture.Location = new System.Drawing.Point(83, 211);
+            this.labelTypeNourriture.Location = new System.Drawing.Point(83, 158);
             this.labelTypeNourriture.Name = "labelTypeNourriture";
             this.labelTypeNourriture.Size = new System.Drawing.Size(137, 16);
             this.labelTypeNourriture.TabIndex = 2;
@@ -84,16 +84,6 @@
             this.labelDescrNourriture.TabIndex = 3;
             this.labelDescrNourriture.Text = "Description de Nourriture";
             // 
-            // labelPhNourriture
-            // 
-            this.labelPhNourriture.AutoSize = true;
-            this.labelPhNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPhNourriture.Location = new System.Drawing.Point(83, 514);
-            this.labelPhNourriture.Name = "labelPhNourriture";
-            this.labelPhNourriture.Size = new System.Drawing.Size(158, 16);
-            this.labelPhNourriture.TabIndex = 4;
-            this.labelPhNourriture.Text = "Photo de la Nourriture";
-            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -102,7 +92,7 @@
             "Entrée",
             "Plat",
             "Dessert"});
-            this.comboBox1.Location = new System.Drawing.Point(368, 205);
+            this.comboBox1.Location = new System.Drawing.Point(368, 152);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 21);
             this.comboBox1.TabIndex = 6;
@@ -115,29 +105,10 @@
             this.textBox2.Size = new System.Drawing.Size(256, 77);
             this.textBox2.TabIndex = 8;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(368, 421);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BTuploadimg
-            // 
-            this.BTuploadimg.Location = new System.Drawing.Point(651, 484);
-            this.BTuploadimg.Name = "BTuploadimg";
-            this.BTuploadimg.Size = new System.Drawing.Size(107, 29);
-            this.BTuploadimg.TabIndex = 10;
-            this.BTuploadimg.Text = "Upload";
-            this.BTuploadimg.UseVisualStyleBackColor = true;
-            this.BTuploadimg.Click += new System.EventHandler(this.BTuploadimg_Click);
-            // 
             // BTvalidergm
             // 
-            this.BTvalidergm.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTvalidergm.Location = new System.Drawing.Point(1008, 421);
+            this.BTvalidergm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTvalidergm.Location = new System.Drawing.Point(368, 456);
             this.BTvalidergm.Name = "BTvalidergm";
             this.BTvalidergm.Size = new System.Drawing.Size(164, 58);
             this.BTvalidergm.TabIndex = 12;
@@ -165,19 +136,48 @@
             this.textBox1.Size = new System.Drawing.Size(143, 24);
             this.textBox1.TabIndex = 14;
             // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(368, 233);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(143, 24);
+            this.textBox3.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(83, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Prix en €";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(513, 456);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 36);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "CLEAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Fromgm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 571);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.linkLbackmenus);
             this.Controls.Add(this.BTvalidergm);
-            this.Controls.Add(this.BTuploadimg);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.labelPhNourriture);
             this.Controls.Add(this.labelDescrNourriture);
             this.Controls.Add(this.labelTypeNourriture);
             this.Controls.Add(this.labelNameNourriture);
@@ -185,7 +185,6 @@
             this.Name = "Fromgm";
             this.Text = "Gérer les Menus";
             this.Load += new System.EventHandler(this.Fromgm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,13 +196,13 @@
         private System.Windows.Forms.Label labelNameNourriture;
         private System.Windows.Forms.Label labelTypeNourriture;
         private System.Windows.Forms.Label labelDescrNourriture;
-        private System.Windows.Forms.Label labelPhNourriture
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button BTuploadimg;
         private System.Windows.Forms.Button BTvalidergm;
         private System.Windows.Forms.LinkLabel linkLbackmenus;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
