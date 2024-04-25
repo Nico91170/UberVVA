@@ -93,6 +93,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(159, 26);
             this.name.TabIndex = 4;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // name2
             // 

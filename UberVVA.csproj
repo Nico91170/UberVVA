@@ -57,6 +57,7 @@
     <Compile Include="AcceuilG.Designer.cs">
       <DependentUpon>AcceuilG.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppliBD.cs" />
     <Compile Include="ConnectionCompte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,12 @@
     <Compile Include="FormajtMenu.Designer.cs">
       <DependentUpon>FormajtMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCompte.Designer.cs">
+      <DependentUpon>GestionCompte.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +91,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="AcceuilG.resx">
       <DependentUpon>AcceuilG.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormajtMenu.resx">
       <DependentUpon>FormajtMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCompte.resx">
+      <DependentUpon>GestionCompte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectMenu.resx">
       <DependentUpon>SelectMenu.cs</DependentUpon>
@@ -121,6 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

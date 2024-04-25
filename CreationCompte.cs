@@ -83,5 +83,10 @@ namespace UberVVA
         {
 
         }
+
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

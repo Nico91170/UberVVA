@@ -47,12 +47,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rubik", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightSkyBlue;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(234, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(765, 42);
+            this.label1.Size = new System.Drawing.Size(720, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "On vous souhaite un bon appétit d\'avance !";
             // 
@@ -112,6 +112,7 @@
             this.TBnameNourriture.Name = "TBnameNourriture";
             this.TBnameNourriture.Size = new System.Drawing.Size(100, 20);
             this.TBnameNourriture.TabIndex = 4;
+            this.TBnameNourriture.TextChanged += new System.EventHandler(this.TBnameNourriture_TextChanged);
             // 
             // label5
             // 
