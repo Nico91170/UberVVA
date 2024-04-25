@@ -134,6 +134,7 @@
             this.TBnameAM.Name = "TBnameAM";
             this.TBnameAM.Size = new System.Drawing.Size(143, 24);
             this.TBnameAM.TabIndex = 14;
+            this.TBnameAM.TextChanged += new System.EventHandler(this.TBnameAM_TextChanged);
             // 
             // textBox3
             // 

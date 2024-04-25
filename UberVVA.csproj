@@ -57,7 +57,6 @@
     <Compile Include="AcceuilG.Designer.cs">
       <DependentUpon>AcceuilG.cs</DependentUpon>
     </Compile>
-    <Compile Include="AppliBD.cs" />
     <Compile Include="ConnectionCompte.cs">
       <SubType>Form</SubType>
     </Compile>

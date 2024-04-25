@@ -40,6 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.LbAffichageMenus = new System.Windows.Forms.ListBox();
+            this.BTafficherMenu = new System.Windows.Forms.Button();
             this.GBmenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,7 @@
             this.GBmenu.Controls.Add(this.label4);
             this.GBmenu.Controls.Add(this.label3);
             this.GBmenu.Controls.Add(this.label2);
-            this.GBmenu.Location = new System.Drawing.Point(358, 102);
+            this.GBmenu.Location = new System.Drawing.Point(589, 95);
             this.GBmenu.Name = "GBmenu";
             this.GBmenu.Size = new System.Drawing.Size(499, 427);
             this.GBmenu.TabIndex = 1;
@@ -150,6 +152,26 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Nom de la nourriture";
             // 
+            // LbAffichageMenus
+            // 
+            this.LbAffichageMenus.FormattingEnabled = true;
+            this.LbAffichageMenus.Location = new System.Drawing.Point(84, 95);
+            this.LbAffichageMenus.Name = "LbAffichageMenus";
+            this.LbAffichageMenus.Size = new System.Drawing.Size(338, 433);
+            this.LbAffichageMenus.TabIndex = 2;
+            this.LbAffichageMenus.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // BTafficherMenu
+            // 
+            this.BTafficherMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTafficherMenu.Location = new System.Drawing.Point(140, 534);
+            this.BTafficherMenu.Name = "BTafficherMenu";
+            this.BTafficherMenu.Size = new System.Drawing.Size(224, 33);
+            this.BTafficherMenu.TabIndex = 3;
+            this.BTafficherMenu.Text = "Afficher les menus disponible";
+            this.BTafficherMenu.UseVisualStyleBackColor = true;
+            this.BTafficherMenu.Click += new System.EventHandler(this.BTafficherMenu_Click);
+            // 
             // SelectionMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,6 +179,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1178, 579);
+            this.Controls.Add(this.BTafficherMenu);
+            this.Controls.Add(this.LbAffichageMenus);
             this.Controls.Add(this.GBmenu);
             this.Controls.Add(this.label1);
             this.Name = "SelectionMenu";
@@ -181,5 +205,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ListBox LbAffichageMenus;
+        private System.Windows.Forms.Button BTafficherMenu;
     }
 }
