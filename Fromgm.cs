@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Xml.Linq;
 
 namespace UberVVA
 {
@@ -22,28 +25,51 @@ namespace UberVVA
 
         }
 
-        private void BTuploadimg_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                OpenFileDialog ofd = new OpenFileDialog();
-                ofd.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    pictureBox1.Image = new Bitmap(ofd.FileName);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void linkLbackmenus_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             AcceuilG ag = new AcceuilG();
             ag.Show();
             this.Hide();
+        }
+
+        private void labelTitlegm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTvalidergm_Click(object sender, EventArgs e)
+        {
+            string connectionString = "server=localhost; database=foodmaps; user id=root; pwd=";
+            using (MySqlConnection connexion = new MySqlConnection(connectionString))
+            {
+                connexion.Open();
+                string insertQuery = "INSERT INTO menu (NomN, Description, Prix, Type) VALUES (@NomN, @Description, @Prix, @Type)";
+                using (MySqlCommand cmd = new MySqlCommand(insertQuery, connexion))
+                {
+                    cmd.Parameters.AddWithValue("@NomN", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@Description", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@Prix", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@Type", comboBox1.Text);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Le menu a été ajouté");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Une erreur s'est produite lors de l'ajout du menu");
+                    }
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
         }
     }
 }
