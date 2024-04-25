@@ -143,7 +143,7 @@
             // 
             // BTvalidergm
             // 
-            this.BTvalidergm.Location = new System.Drawing.Point(921, 154);
+            this.BTvalidergm.Location = new System.Drawing.Point(1008, 248);
             this.BTvalidergm.Name = "BTvalidergm";
             this.BTvalidergm.Size = new System.Drawing.Size(139, 36);
             this.BTvalidergm.TabIndex = 12;
