@@ -38,8 +38,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTuploadimg = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BTvalidergm = new System.Windows.Forms.Button();
+            this.linkLbackmenus = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,31 +141,34 @@
             this.BTuploadimg.UseVisualStyleBackColor = true;
             this.BTuploadimg.Click += new System.EventHandler(this.BTuploadimg_Click);
             // 
-            // button1
+            // BTvalidergm
             // 
-            this.button1.Location = new System.Drawing.Point(921, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 36);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BTvalidergm.Location = new System.Drawing.Point(921, 154);
+            this.BTvalidergm.Name = "BTvalidergm";
+            this.BTvalidergm.Size = new System.Drawing.Size(139, 36);
+            this.BTvalidergm.TabIndex = 12;
+            this.BTvalidergm.Text = "Valider";
+            this.BTvalidergm.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // linkLbackmenus
             // 
-            this.button2.Location = new System.Drawing.Point(921, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 36);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.linkLbackmenus.AutoSize = true;
+            this.linkLbackmenus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLbackmenus.Location = new System.Drawing.Point(1005, 546);
+            this.linkLbackmenus.Name = "linkLbackmenus";
+            this.linkLbackmenus.Size = new System.Drawing.Size(195, 16);
+            this.linkLbackmenus.TabIndex = 13;
+            this.linkLbackmenus.TabStop = true;
+            this.linkLbackmenus.Text = "Retourner à la page des Menus";
+            this.linkLbackmenus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLbackmenus_LinkClicked);
             // 
             // Fromgm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 571);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.linkLbackmenus);
+            this.Controls.Add(this.BTvalidergm);
             this.Controls.Add(this.BTuploadimg);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
@@ -197,7 +200,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BTuploadimg;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTvalidergm;
+        private System.Windows.Forms.LinkLabel linkLbackmenus;
     }
 }

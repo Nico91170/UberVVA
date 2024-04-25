@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionMenu));
             this.label1 = new System.Windows.Forms.Label();
-            this.BTgogm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,16 +46,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "On vous souhaite un bon appétit d\'avance !";
             // 
-            // BTgogm
-            // 
-            this.BTgogm.Location = new System.Drawing.Point(541, 526);
-            this.BTgogm.Name = "BTgogm";
-            this.BTgogm.Size = new System.Drawing.Size(119, 27);
-            this.BTgogm.TabIndex = 1;
-            this.BTgogm.Text = "Gestion des Menus";
-            this.BTgogm.UseVisualStyleBackColor = true;
-            this.BTgogm.Click += new System.EventHandler(this.BTgogm_Click);
-            // 
             // SelectionMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -64,7 +53,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1178, 579);
-            this.Controls.Add(this.BTgogm);
             this.Controls.Add(this.label1);
             this.Name = "SelectionMenu";
             this.Text = "Selection des Menus";
@@ -76,6 +64,5 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BTgogm;
     }
 }

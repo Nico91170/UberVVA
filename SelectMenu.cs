@@ -16,12 +16,5 @@ namespace UberVVA
         {
             InitializeComponent();
         }
-
-        private void BTgogm_Click(object sender, EventArgs e)
-        {
-            Fromgm gm = new Fromgm();
-            gm.Show();
-            this.Hide();
-        }
     }
 }

@@ -38,5 +38,12 @@ namespace UberVVA
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void linkLbackmenus_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AcceuilG ag = new AcceuilG();
+            ag.Show();
+            this.Hide();
+        }
     }
 }
