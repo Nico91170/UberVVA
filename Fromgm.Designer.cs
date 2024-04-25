@@ -50,9 +50,9 @@
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitlegm.Location = new System.Drawing.Point(421, 9);
             this.labelTitlegm.Name = "labelTitlegm";
-            this.labelTitlegm.Size = new System.Drawing.Size(355, 31);
+            this.labelTitlegm.Size = new System.Drawing.Size(350, 31);
             this.labelTitlegm.TabIndex = 0;
-            this.labelTitlegm.Text = "Veuillez gérez les Menus !";
+            this.labelTitlegm.Text = "Veuillez gérer les Menus !";
             // 
             // labelNameNourriture
             // 
@@ -104,7 +104,7 @@
             "Dessert"});
             this.comboBox1.Location = new System.Drawing.Point(368, 205);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(143, 21);
             this.comboBox1.TabIndex = 6;
             // 
             // textBox2
@@ -136,12 +136,14 @@
             // 
             // BTvalidergm
             // 
-            this.BTvalidergm.Location = new System.Drawing.Point(1008, 248);
+            this.BTvalidergm.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTvalidergm.Location = new System.Drawing.Point(1008, 421);
             this.BTvalidergm.Name = "BTvalidergm";
-            this.BTvalidergm.Size = new System.Drawing.Size(139, 36);
+            this.BTvalidergm.Size = new System.Drawing.Size(164, 58);
             this.BTvalidergm.TabIndex = 12;
             this.BTvalidergm.Text = "Valider";
             this.BTvalidergm.UseVisualStyleBackColor = true;
+            this.BTvalidergm.Click += new System.EventHandler(this.BTvalidergm_Click);
             // 
             // linkLbackmenus
             // 
@@ -181,7 +183,7 @@
             this.Controls.Add(this.labelNameNourriture);
             this.Controls.Add(this.labelTitlegm);
             this.Name = "Fromgm";
-            this.Text = "Form1";
+            this.Text = "Gérer les Menus";
             this.Load += new System.EventHandler(this.Fromgm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

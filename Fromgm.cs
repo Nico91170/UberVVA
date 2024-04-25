@@ -45,5 +45,10 @@ namespace UberVVA
             ag.Show();
             this.Hide();
         }
+
+        private void BTvalidergm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
