@@ -36,7 +36,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.BTvalidergm = new System.Windows.Forms.Button();
             this.linkLbackmenus = new System.Windows.Forms.LinkLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBnameAM = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -127,13 +127,13 @@
             this.linkLbackmenus.Text = "Retourner à la page des Menus";
             this.linkLbackmenus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLbackmenus_LinkClicked);
             // 
-            // textBox1
+            // TBnameAM
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(368, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 24);
-            this.textBox1.TabIndex = 14;
+            this.TBnameAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBnameAM.Location = new System.Drawing.Point(368, 82);
+            this.TBnameAM.Name = "TBnameAM";
+            this.TBnameAM.Size = new System.Drawing.Size(143, 24);
+            this.TBnameAM.TabIndex = 14;
             // 
             // textBox3
             // 
@@ -171,7 +171,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TBnameAM);
             this.Controls.Add(this.linkLbackmenus);
             this.Controls.Add(this.BTvalidergm);
             this.Controls.Add(this.textBox2);
@@ -198,7 +198,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button BTvalidergm;
         private System.Windows.Forms.LinkLabel linkLbackmenus;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBnameAM;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;

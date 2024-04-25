@@ -12,9 +12,10 @@ namespace UberVVA
 {
     public partial class SelectionMenu : Form
     {
-        public SelectionMenu()
+        public SelectionMenu(string str_value)
         {
             InitializeComponent();
+            TBnameNourriture.Text = str_value;
         }
     }
 }

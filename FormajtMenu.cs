@@ -40,14 +40,13 @@ namespace UberVVA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            TBnameAM.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
         }
 
         private void BTvalidergm_Click(object sender, EventArgs e)
         {
-
             string connectionString = "server=localhost; database=foodmaps; user id=root; pwd=";
             using (MySqlConnection connexion = new MySqlConnection(connectionString))
             {
@@ -55,7 +54,7 @@ namespace UberVVA
                 string insertQuery = "INSERT INTO menu (NomN, Description, Prix, Type) VALUES (@NomN, @Description, @Prix, @Type)";
                 using (MySqlCommand cmd = new MySqlCommand(insertQuery, connexion))
                 {
-                    cmd.Parameters.AddWithValue("@NomN", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@NomN", TBnameAM.Text);
                     cmd.Parameters.AddWithValue("@Description", textBox2.Text);
                     cmd.Parameters.AddWithValue("@Prix", textBox3.Text);
                     cmd.Parameters.AddWithValue("@Type", comboBox1.Text);
