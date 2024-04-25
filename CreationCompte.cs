@@ -67,6 +67,9 @@ namespace UberVVA
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Votre compte est créé");
+                        FormConn CO = new FormConn();
+                        CO.Show();
+                        this.Hide();
                     }
                     else
                     {

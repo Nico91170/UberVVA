@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcceuilG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceuilG.Designer.cs">
+      <DependentUpon>AcceuilG.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnectionCompte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcceuilG.resx">
+      <DependentUpon>AcceuilG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConnectionCompte.resx">
       <DependentUpon>ConnectionCompte.cs</DependentUpon>
     </EmbeddedResource>
