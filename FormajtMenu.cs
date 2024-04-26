@@ -41,8 +41,9 @@ namespace UberVVA
         private void button1_Click(object sender, EventArgs e)
         {
             TBnameAM.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+            CBtypeNA.Text = "";
+            TBprixA.Text = "";
+            TBdescrNA.Text = "";
         }
 
         private void BTvalidergm_Click(object sender, EventArgs e)
@@ -56,11 +57,11 @@ namespace UberVVA
                 {
                     //On ajoute les valeurs des champs du formulaire dans la base de données
                     cmd.Parameters.AddWithValue("@NomN", TBnameAM.Text);
-                    cmd.Parameters.AddWithValue("@Description", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@Prix", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@Type", comboBox1.Text);
+                    cmd.Parameters.AddWithValue("@Description", TBdescrNA.Text);
+                    cmd.Parameters.AddWithValue("@Prix", TBprixA.Text);
+                    cmd.Parameters.AddWithValue("@Type", CBtypeNA.Text);
 
-
+                    
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {

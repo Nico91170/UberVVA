@@ -32,12 +32,12 @@
             this.labelNameNourriture = new System.Windows.Forms.Label();
             this.labelTypeNourriture = new System.Windows.Forms.Label();
             this.labelDescrNourriture = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CBtypeNA = new System.Windows.Forms.ComboBox();
+            this.TBdescrNA = new System.Windows.Forms.TextBox();
             this.BTvalidergm = new System.Windows.Forms.Button();
             this.linkLbackmenus = new System.Windows.Forms.LinkLabel();
             this.TBnameAM = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TBprixA = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -83,11 +83,11 @@
             this.labelDescrNourriture.TabIndex = 3;
             this.labelDescrNourriture.Text = "Description de Nourriture";
             // 
-            // comboBox1
+            // CBtypeNA
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CBtypeNA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBtypeNA.FormattingEnabled = true;
+            this.CBtypeNA.Items.AddRange(new object[] {
             "Entrée",
             "Plat",
             "Dessert"});
@@ -98,12 +98,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(368, 338);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 77);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.TBdescrNA.Location = new System.Drawing.Point(368, 338);
+            this.TBdescrNA.Multiline = true;
+            this.TBdescrNA.Name = "TBdescrNA";
+            this.TBdescrNA.Size = new System.Drawing.Size(256, 77);
+            this.TBdescrNA.TabIndex = 8;
             // 
             // BTvalidergm
             // 
@@ -137,13 +136,13 @@
             this.TBnameAM.TabIndex = 14;
             this.TBnameAM.TextChanged += new System.EventHandler(this.TBnameAM_TextChanged);
             // 
-            // textBox3
+            // TBprixA
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(368, 233);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 24);
-            this.textBox3.TabIndex = 16;
+            this.TBprixA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBprixA.Location = new System.Drawing.Point(368, 233);
+            this.TBprixA.Name = "TBprixA";
+            this.TBprixA.Size = new System.Drawing.Size(143, 24);
+            this.TBprixA.TabIndex = 16;
             // 
             // label1
             // 
@@ -171,13 +170,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 571);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TBprixA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TBnameAM);
             this.Controls.Add(this.linkLbackmenus);
             this.Controls.Add(this.BTvalidergm);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TBdescrNA);
+            this.Controls.Add(this.CBtypeNA);
             this.Controls.Add(this.labelDescrNourriture);
             this.Controls.Add(this.labelTypeNourriture);
             this.Controls.Add(this.labelNameNourriture);
@@ -196,12 +195,12 @@
         private System.Windows.Forms.Label labelNameNourriture;
         private System.Windows.Forms.Label labelTypeNourriture;
         private System.Windows.Forms.Label labelDescrNourriture;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox CBtypeNA;
+        private System.Windows.Forms.TextBox TBdescrNA;
         private System.Windows.Forms.Button BTvalidergm;
         private System.Windows.Forms.LinkLabel linkLbackmenus;
         private System.Windows.Forms.TextBox TBnameAM;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TBprixA;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
     }
