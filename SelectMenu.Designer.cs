@@ -114,7 +114,6 @@
             this.TBnameNourriture.Name = "TBnameNourriture";
             this.TBnameNourriture.Size = new System.Drawing.Size(100, 20);
             this.TBnameNourriture.TabIndex = 4;
-            this.TBnameNourriture.TextChanged += new System.EventHandler(this.TBnameNourriture_TextChanged);
             // 
             // label5
             // 
@@ -159,7 +158,6 @@
             this.LbAffichageMenus.Name = "LbAffichageMenus";
             this.LbAffichageMenus.Size = new System.Drawing.Size(338, 433);
             this.LbAffichageMenus.TabIndex = 2;
-            this.LbAffichageMenus.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // BTafficherMenu
             // 
@@ -170,7 +168,6 @@
             this.BTafficherMenu.TabIndex = 3;
             this.BTafficherMenu.Text = "Afficher les menus disponible";
             this.BTafficherMenu.UseVisualStyleBackColor = true;
-            this.BTafficherMenu.Click += new System.EventHandler(this.BTafficherMenu_Click);
             // 
             // SelectionMenu
             // 

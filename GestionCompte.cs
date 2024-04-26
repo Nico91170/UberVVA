@@ -98,7 +98,7 @@ namespace UberVVA
             string username = Convert.ToString(textBox4.Text);
             string pwd = Convert.ToString(textBox5.Text);
             user u = new user(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
-            AppliBD.AjoutUser(u);
+            ClassMenu.AjoutUser(u);
             listBoxuser.Items.Add(u);
         }
         private void tabPage1_Click(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace UberVVA
         private void buttonSuppr_Click(object sender, EventArgs e)
         {
             user u = (user)listBoxuser.SelectedItem;
-            AppliBD.supprimeruser(u);
+            ClassMenu.supprimeruser(u);
             listBoxuser.Items.Remove(u);
 
         }
@@ -123,9 +123,9 @@ namespace UberVVA
         private void button4_Click(object sender, EventArgs e)
         {
             user u = (user)listBoxuser.SelectedItem;
-            AppliBD.supprimeruser(u);
+            ClassMenu.supprimeruser(u);
             listBoxuser.Items.Remove(u);
-            AppliBD.AjoutUser(u);
+            ClassMenu.AjoutUser(u);
             listBoxuser.Items.Add(u);
             u.SetNom(textBox1.Text);
             u.SetPrenom(textBox2.Text);
@@ -161,7 +161,7 @@ namespace UberVVA
         private void Affichage_Click(object sender, EventArgs e)
         {
             listBoxuser.Items.Clear();
-            List<user> listeU = AppliBD.GetTousLesuser();
+            List<user> listeU = ClassMenu.GetTousLesuser();
             listBoxuser.Items.AddRange(listeU.ToArray());
         }
 

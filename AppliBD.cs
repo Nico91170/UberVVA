@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace UberVVA
 {
-    internal class AppliBD
+    internal class ClassMenu
     {
         // MySqlConnection connexion = new MySqlConnection("Server=localhost;Database=resa;Uid=root;Pwd=;");
         public static MySqlConnection GetConnection()
@@ -27,7 +27,7 @@ namespace UberVVA
             List<user> listeU = new List<user>();
 
             string reqQueryEtus = "Select Nom, Prenom, role ,username ,password from user ";
-            MySqlCommand cmd = AppliBD.GetConnection().CreateCommand();
+            MySqlCommand cmd = ClassMenu.GetConnection().CreateCommand();
             cmd.CommandText = reqQueryEtus;
             MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -40,7 +40,7 @@ namespace UberVVA
         }
         public static void AjoutUser(user u)
         {
-            MySqlCommand cmd = AppliBD.GetConnection().CreateCommand();
+            MySqlCommand cmd = ClassMenu.GetConnection().CreateCommand();
 
             //String reqUPar = "UPDATE participant SET balance = balance -" + d.GetMontant()/pconcernes.Count+ " where id = " + p.GetId();
             String reqUPar = "INSERT into user (Nom,Prenom,role,username,password) VALUES (" + u.GetNom() + ",'" + u.GetPrenom() + "','" + u.Getrole() + "','" + u.Getusername() + "','" + u.Getusername() + "','" + u.Getpwd() + "')";
@@ -53,7 +53,7 @@ namespace UberVVA
 
         public static void supprimeruser(user u)
         {
-            MySqlCommand cmd = AppliBD.GetConnection().CreateCommand();
+            MySqlCommand cmd = ClassMenu.GetConnection().CreateCommand();
 
             //String reqUPar = "UPDATE participant SET balance = balance -" + d.GetMontant()/pconcernes.Count+ " where id = " + p.GetId();
             String reqUPar = "DELETE FROM `user`WHERE `Nom` = '" + u.GetNom() + "' AND `Prenom` = '" + u.GetPrenom() + "'  AND `role` = '" + u.Getrole() + "'  AND `username` = '" + u.Getusername() + "' AND `password` = '" + u.Getpwd() + "';";
@@ -66,7 +66,7 @@ namespace UberVVA
 
         public static void modifieruser(user u)
         {
-            MySqlCommand cmd = AppliBD.GetConnection().CreateCommand();
+            MySqlCommand cmd = ClassMenu.GetConnection().CreateCommand();
 
             String reqUPar = "UPDATE `user` SET `Nom` = '" + u.GetNom() + "', `Prenom` = '" + u.GetPrenom() + "', `role` = '" + u.Getrole() + "', `username` = '" + u.Getusername() + "',`password` = '" + u.Getpwd() + "' where id =   ";
             // String reqUPar = "DELETE FROM `menu`WHERE `Formule` = '" + m.GetFormule() + "' AND `Boisson` = '" + m.Getboisson() + "'  AND `Sandwich` = '" + m.Getsandwich() + "'  AND `Viennoiserie` = '" + m.Getviennoiserie() + "';";
