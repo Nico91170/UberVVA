@@ -55,5 +55,10 @@ namespace UberVVA
                 }
             }
         }
+
+        private void SelectionMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
