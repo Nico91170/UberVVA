@@ -9,17 +9,17 @@ namespace UberVVA
     public class user
     {
 
-        private String Nom;
-        private String Prenom;
+        private String nom;
+        private String prenom;
         private String role;
         private String username;
         private String pwd;
 
-        public user(string Nom, string Prenom, string role, string username, string pwd)
+        public user(string nom, string prenom, string role, string username, string pwd)
         {
 
-            this.Nom = Nom;
-            this.Prenom = Prenom;
+            this.nom = nom;
+            this.prenom = prenom;
             this.role = role;
             this.username = username;
             this.pwd = pwd;
@@ -27,13 +27,13 @@ namespace UberVVA
         }
 
 
-        public string GetNom()
+        public string Getnom()
         {
-            return this.Nom;
+            return this.nom;
         }
-        public string GetPrenom()
+        public string Getprenom()
         {
-            return this.Prenom;
+            return this.prenom;
         }
         public string Getrole()
         {
@@ -57,13 +57,13 @@ namespace UberVVA
 
 
 
-        public void SetNom(String newNom)
+        public void Setnom(String newNom)
         {
-            this.Nom = newNom;
+            this.nom = newNom;
         }
-        public void SetPrenom(String newPrenom)
+        public void Setprenom(String newPrenom)
         {
-            this.Prenom = newPrenom;
+            this.prenom = newPrenom;
         }
         public void Setrole(String newrole)
         {
@@ -85,7 +85,7 @@ namespace UberVVA
 
         public override string ToString()
         {
-            return this.Prenom + '/' + this.Nom + '/' + this.username + '/' + this.pwd+ '/'+ this.role;
+            return this.prenom + '/' + this.nom + '/' + this.username + '/' + this.pwd+ '/'+ this.role;
         }
 
 

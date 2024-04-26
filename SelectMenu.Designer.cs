@@ -158,6 +158,7 @@
             this.LbAffichageMenus.Name = "LbAffichageMenus";
             this.LbAffichageMenus.Size = new System.Drawing.Size(338, 433);
             this.LbAffichageMenus.TabIndex = 2;
+            this.LbAffichageMenus.SelectedIndexChanged += new System.EventHandler(this.LbAffichageMenus_SelectedIndexChanged);
             // 
             // BTafficherMenu
             // 

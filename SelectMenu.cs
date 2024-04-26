@@ -15,10 +15,14 @@ namespace UberVVA
 
     public partial class SelectionMenu : Form
     {
-        public SelectionMenu(string str_value)
+        public SelectionMenu()
         {
             InitializeComponent();
-            TBnameNourriture.Text = str_value;
+        }
+
+        private void LbAffichageMenus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -20,7 +20,7 @@ namespace UberVVA
 
 
         }
-        String cs = @"server=localhost;userid=root;password=;database=foodmaps";
+        String cs = @"server=localhost;userid=root;pwd=;database=foodmaps";
         MySqlConnection conn;
         MySqlCommand cmd;
         MySqlDataReader rdr;
@@ -39,8 +39,8 @@ namespace UberVVA
             user u = (user)listBoxuser.SelectedItem;
             if (u != null)
             {
-                textBox1.Text = u.GetNom();
-                textBox2.Text = u.GetPrenom();
+                textBox1.Text = u.Getnom();
+                textBox2.Text = u.Getprenom();
                 textBox3.Text = u.Getrole();
                 textBox4.Text = u.Getusername();
                 textBox5.Text = u.Getpwd();
@@ -92,9 +92,9 @@ namespace UberVVA
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string Nom = Convert.ToString(textBox1.Text);
-            string Prenom = Convert.ToString(textBox2.Text);
-            string Role = Convert.ToString(textBox3.Text);
+            string nom = Convert.ToString(textBox1.Text);
+            string prenom = Convert.ToString(textBox2.Text);
+            string role = Convert.ToString(textBox3.Text);
             string username = Convert.ToString(textBox4.Text);
             string pwd = Convert.ToString(textBox5.Text);
             user u = new user(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
@@ -103,13 +103,6 @@ namespace UberVVA
         }
         private void tabPage1_Click(object sender, EventArgs e)
         {
-        }
-
-        internal class Show
-        {
-            public Show()
-            {
-            }
         }
 
         private void buttonSuppr_Click(object sender, EventArgs e)
@@ -127,8 +120,8 @@ namespace UberVVA
             listBoxuser.Items.Remove(u);
             ClassMenu.AjoutUser(u);
             listBoxuser.Items.Add(u);
-            u.SetNom(textBox1.Text);
-            u.SetPrenom(textBox2.Text);
+            u.Setnom(textBox1.Text);
+            u.Setprenom(textBox2.Text);
             u.Setrole(textBox3.Text);
             u.Setusername(textBox4.Text);
             u.Setpwd(textBox5.Text);
@@ -140,8 +133,8 @@ namespace UberVVA
 
 
 
-            string Nom = textBox1.Text;
-            string Prenom = textBox2.Text;
+            string nom = textBox1.Text;
+            string prenom = textBox2.Text;
             string role = textBox3.Text;
             string username = textBox4.Text;
             string pwd = textBox5.Text;
@@ -150,7 +143,7 @@ namespace UberVVA
 
 
 
-            user u = new user(Nom, Prenom, role, username, pwd);
+            user u = new user(nom, prenom, role, username, pwd);
             listBoxuser.Items.Remove(u);
             listBoxuser.Items.Add(u);
 
@@ -175,7 +168,7 @@ namespace UberVVA
 
         }
 
-        private void listBoxMenu_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void listboxMenu_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
@@ -183,6 +176,26 @@ namespace UberVVA
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string connectionString = "server=localhost; database=foodmaps; user id=root; pwd=";
+            using (MySqlConnection connexion = new MySqlConnection(connectionString))
+            {
+                connexion.Open();
+                string selectQuery = "SELECT * FROM user";
+                using (MySqlCommand cmd = new MySqlCommand(selectQuery, connexion))
+                {
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            listBoxuser.Items.Add(reader["nom"].ToString() + " / " + reader["prenom"].ToString() + " / " + reader["role"].ToString() + " / " + reader["username"].ToString() + "/" + reader["password"].ToString());
+                        }
+                    }
+                }
+            }
         }
     }
 }

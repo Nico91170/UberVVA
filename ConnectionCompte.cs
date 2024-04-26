@@ -51,8 +51,8 @@ namespace UberVVA
                     }
                     if (role == "Vacancier")
                     {
-                        SelectionMenu SM = new SelectionMenu();
-                        SM.Show();
+                        SelectionMenu S = new SelectionMenu();
+                        S.Show();
                         this.Hide();
                     }
 

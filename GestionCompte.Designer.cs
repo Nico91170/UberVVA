@@ -32,27 +32,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pwd = new System.Windows.Forms.Label();
+            this.username = new System.Windows.Forms.Label();
+            this.Role = new System.Windows.Forms.Label();
+            this.prenom = new System.Windows.Forms.Label();
+            this.nom = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.nom = new System.Windows.Forms.Label();
-            this.prenom = new System.Windows.Forms.Label();
-            this.Role = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.Label();
-            this.pwd = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBoxuser
             // 
+            this.listBoxuser.BackColor = System.Drawing.SystemColors.MenuBar;
             this.listBoxuser.FormattingEnabled = true;
             this.listBoxuser.Location = new System.Drawing.Point(51, 143);
             this.listBoxuser.Name = "listBoxuser";
@@ -102,6 +103,96 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(52, 164);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Mettre à jour";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(66, 126);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(66, 95);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(66, 68);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(66, 41);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(66, 16);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
+            // 
+            // pwd
+            // 
+            this.pwd.AutoSize = true;
+            this.pwd.Location = new System.Drawing.Point(8, 129);
+            this.pwd.Name = "pwd";
+            this.pwd.Size = new System.Drawing.Size(52, 13);
+            this.pwd.TabIndex = 4;
+            this.pwd.Text = "password";
+            // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Location = new System.Drawing.Point(7, 98);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(53, 13);
+            this.username.TabIndex = 3;
+            this.username.Text = "username";
+            // 
+            // Role
+            // 
+            this.Role.AutoSize = true;
+            this.Role.Location = new System.Drawing.Point(8, 75);
+            this.Role.Name = "Role";
+            this.Role.Size = new System.Drawing.Size(29, 13);
+            this.Role.TabIndex = 2;
+            this.Role.Text = "Rôle";
+            // 
+            // prenom
+            // 
+            this.prenom.AutoSize = true;
+            this.prenom.Location = new System.Drawing.Point(8, 48);
+            this.prenom.Name = "prenom";
+            this.prenom.Size = new System.Drawing.Size(43, 13);
+            this.prenom.TabIndex = 1;
+            this.prenom.Text = "Prénom";
+            // 
+            // nom
+            // 
+            this.nom.AutoSize = true;
+            this.nom.Location = new System.Drawing.Point(7, 16);
+            this.nom.Name = "nom";
+            this.nom.Size = new System.Drawing.Size(29, 13);
+            this.nom.TabIndex = 0;
+            this.nom.Text = "Nom";
+            this.nom.Click += new System.EventHandler(this.label3_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -119,6 +210,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Afficher les comptes";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -138,98 +230,9 @@
             this.button3.Text = "Deconnexion";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // nom
-            // 
-            this.nom.AutoSize = true;
-            this.nom.Location = new System.Drawing.Point(7, 16);
-            this.nom.Name = "nom";
-            this.nom.Size = new System.Drawing.Size(29, 13);
-            this.nom.TabIndex = 0;
-            this.nom.Text = "Nom";
-            this.nom.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // prenom
-            // 
-            this.prenom.AutoSize = true;
-            this.prenom.Location = new System.Drawing.Point(8, 48);
-            this.prenom.Name = "prenom";
-            this.prenom.Size = new System.Drawing.Size(43, 13);
-            this.prenom.TabIndex = 1;
-            this.prenom.Text = "Prénom";
-            // 
-            // Role
-            // 
-            this.Role.AutoSize = true;
-            this.Role.Location = new System.Drawing.Point(8, 75);
-            this.Role.Name = "Role";
-            this.Role.Size = new System.Drawing.Size(29, 13);
-            this.Role.TabIndex = 2;
-            this.Role.Text = "Rôle";
-            // 
-            // username
-            // 
-            this.username.AutoSize = true;
-            this.username.Location = new System.Drawing.Point(7, 98);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(53, 13);
-            this.username.TabIndex = 3;
-            this.username.Text = "username";
-            // 
-            // pwd
-            // 
-            this.pwd.AutoSize = true;
-            this.pwd.Location = new System.Drawing.Point(8, 129);
-            this.pwd.Name = "pwd";
-            this.pwd.Size = new System.Drawing.Size(52, 13);
-            this.pwd.TabIndex = 4;
-            this.pwd.Text = "password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(66, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(66, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(66, 68);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(66, 95);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(66, 126);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(52, 164);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Mettre à jour";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // GestionCompte
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
