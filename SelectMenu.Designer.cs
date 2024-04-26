@@ -185,6 +185,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SelectionMenu";
             this.Text = "Selection des Menus";
+            this.Load += new System.EventHandler(this.SelectionMenu_Load);
             this.GBmenu.ResumeLayout(false);
             this.GBmenu.PerformLayout();
             this.ResumeLayout(false);

@@ -49,7 +49,7 @@ namespace UberVVA
                         while (reader.Read())
                         {
                             // 6. On ajoute les résultats à la listebox
-                            LbAffichageMenus.Items.Add(reader["NomN"].ToString() + "- / " + reader["Description"].ToString() + " / " + reader["Prix"].ToString() + " / " + reader["Type"].ToString());
+                            LbAffichageMenus.Items.Add(reader["NomN"].ToString() + " / " + reader["Description"].ToString() + " / " + reader["Prix"].ToString() + " / " + reader["Type"].ToString());
                         }
                     }
                 }
